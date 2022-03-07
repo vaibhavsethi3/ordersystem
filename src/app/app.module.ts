@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
+import { OrderSystemComponent } from './ordersystem/ordersystem.component';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { ApiService } from './shared/api.service';
