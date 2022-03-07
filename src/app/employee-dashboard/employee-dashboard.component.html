@@ -94,7 +94,7 @@ aria-hidden="true"
     <div class="modal-body">
       <form [formGroup]="employeeValue">
         <div class="mb-3">
-          <label for="txtname" class="form-label">Name</label>
+          <label for="txtname" class="form-label">Item Name</label>
           <input
             type="text"
             formControlName="name"
@@ -104,12 +104,12 @@ aria-hidden="true"
           />
         </div>
         <div class="mb-3">
-          <label for="txtint" class="form-label">Item Quantity</label>
+          <label for="txtnumber" class="form-label">Item Quantity</label>
           <input
-            type="int"
-            formControlName="int"
+            type="number"
+            formControlName="number"
             class="form-control"
-            id="txtint"
+            id="txtnumber"
             placeholder="Enter item quantity"
           />
         </div>
@@ -124,5 +124,52 @@ aria-hidden="true"
       </button>
     </div>
   </div>
+</div>
+<div class="modal-dialog">
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title" id="staticBackdropLabel">
+      Delete Item
+    </h5>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="modal"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="modal-body">
+    <form [formGroup]="employeeValue">
+      <div class="mb-3">
+        <label for="txtname" class="form-label">Item Name</label>
+        <input
+          type="text"
+          formControlName="name"
+          class="form-control"
+          id="txtname"
+          placeholder="Enter item name"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="txtnumber" class="form-label">Item Quantity to be deleted</label>
+        <input
+          type="number"
+          formControlName="number"
+          class="form-control"
+          id="txtnumber"
+          placeholder="Enter item quantity to be deleted"
+        />
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
+      Close
+    </button>
+    <button type="button" class="btn btn-primary" (click)="AddEmployee()">
+      Save
+    </button>
+  </div>
+</div>
 </div>
 </div>
