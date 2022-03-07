@@ -44,10 +44,10 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let employee of employeeList">
-      <td>{{ employee.id }}</td>
-      <td>{{ employee.name }}</td>
-      <td>{{ employee.email }}</td>
+    <tr *ngFor="let order of orderList">
+      <td>{{ order.id }}</td>
+      <td>{{ order.name }}</td>
+      <td>{{ order.qty }}</td>
       <td>
         <input
           type="button"
@@ -59,7 +59,7 @@
         <input
           type="button"
           value="Delete"
-          (click)="deleteEmployee(employee)"
+          (click)="deleteOrder(order)"
           class="btn btn-danger"
         />
       </td>
