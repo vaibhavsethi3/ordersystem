@@ -12,7 +12,7 @@ import { ApiService } from './shared/api.service';
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule],
   providers: [HttpClientModule, ApiService],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  declarations: [AppComponent, HelloComponent, EmployeeDashboardComponent],
+  declarations: [AppComponent, HelloComponent, OrderSystemComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
