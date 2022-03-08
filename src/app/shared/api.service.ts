@@ -9,7 +9,7 @@ export class ApiService {
 
   // Post Method For Add Student
   postOrder(data: any) {
-    return this._http.post<any>('http://localhost:4200', data).pipe(
+    return this._http.post<any>('http://localhost:4200/posts', data).pipe(
       map((res: any) => {
         return res;
       })
@@ -18,7 +18,7 @@ export class ApiService {
 
   // Get Method For All Student
   getOrder() {
-    return this._http.get<any>('http://localhost:4200').pipe(
+    return this._http.get<any>('http://localhost:4200/posts').pipe(
       map((res: any) => {
         return res;
       })
@@ -27,7 +27,7 @@ export class ApiService {
 
   // Put Method For Update Student
   putOrder(data: any, id: number) {
-    return this._http.put<any>('http://localhost:4200' + id, data).pipe(
+    return this._http.put<any>('http://localhost:4200/posts' + id, data).pipe(
       map((res: any) => {
         return res;
       })
@@ -36,7 +36,7 @@ export class ApiService {
 
   // Delete Method For Update Student
   deleteOrder(id: number) {
-    return this._http.delete<any>('http://localhost:4200' + id).pipe(
+    return this._http.delete<any>('http://localhost:4200/posts' + id).pipe(
       map((res: any) => {
         return res;
       })
